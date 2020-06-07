@@ -1,6 +1,6 @@
 # MapReduce on OpenCL-based FPGA
 ## Prerequisites
-* The gcc-4.8 or above
+* Altera OpenCL SDK version 14.0
 * Terasic’s DE5-Net Altera Stratix V FPGA board
 
 ## Cite this work
