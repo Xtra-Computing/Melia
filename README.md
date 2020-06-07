@@ -20,5 +20,4 @@ If you use it in your paper, please cite our work ([full version](https://wangze
 
 ## Related systems
 
-* Graph systems on GPU: [G3](https://github.com/Xtra-Computing/G3) | [Medusa](https://github.com/Xtra-Computing/Medusa)
-* Other Thunder-series systems in Xtra NUS: [ThunderGBM](https://github.com/Xtra-Computing/thundergbm) | [ThunderSVM](https://github.com/Xtra-Computing/thundersvm)
+*  Query Processing on FPGAs: [Query](https://github.com/Xtra-Computing/Query_on_OpenCL_FPGA) 
