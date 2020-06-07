@@ -1,26 +1,24 @@
-HashjoinOnHARP
-Prerequisites
-The gcc-4.8 or above
-The Hardware Accelerator Research Program (HARP) v2 platform at (https://wikis.uni-paderborn.de/pc2doc/HARP2).
-You may need to be granted to access this platform.
-Run the code
-$ cd ./
-$ make  # make the host execution program
-$ aoc ./device/shj.cl -g --report --board bdw_fpga_v1.0 -o ./bin/shj.aocx  # make the FPGA execution program. It takes time.
-$ cd ./bin
-$ ./host
-Cite this work
-If you use it in your paper, please cite our work (full version).
+# MapReduce on OpenCL-based FPGA
+## Prerequisites
+* The gcc-4.8 or above
+* Terasic’s DE5-Net Altera Stratix V FPGA board
 
-@article{chenfpga,
-  title={Is FPGA Useful for Hash Joins?},
-  author={Chen, Xinyu and Chen, Yao and Bajaj, Ronak and He, Jiong and He, Bingsheng and Wong, Weng-Fai and Chen, Deming},
-  year={2020},
-  booktitle={Conference on Innovative Data Systems Research (CIDR), 2020},
+## Cite this work
+If you use it in your paper, please cite our work ([full version](https://wangzeke.github.io/doc/melia-tpds-16.pdf)).
+```
+@article{wang_tpds,
+  title={Melia: A MapReduce Framework on OpenCL-Based FPGAs},
+  author={Zeke Wang and Shuhao Zhang and Bingsheng He and Wei Zhang},
+  year={2016},
+  booktitle={IEEE Transactions on Parallel and Distributed Systems (TPDS), 2016},
 }
 
-Related publications
-Xinyu Chen*, Ronak Bajaj^, Yao Chen, Jiong He, Bingsheng He, Weng-Fai Wong and Deming Chen. On-The-Fly Parallel Data Shuffling for Graph Processing on OpenCL-based FPGAs. FPL, 2019.
-Related systems
-Graph systems on GPU: G3 | Medusa
-Other Thunder-series systems in Xtra NUS: ThunderGBM | ThunderSVM
+```
+### Related publications
+* Zeke Wang, Shuhao Zhang, Bingsheng He, and Wei Zhang. [Melia: A MapReduce Framework on OpenCL-Based FPGAs](https://wangzeke.github.io/doc/melia-tpds-16.pdf). TPDS, 2016.
+
+
+## Related systems
+
+* Graph systems on GPU: [G3](https://github.com/Xtra-Computing/G3) | [Medusa](https://github.com/Xtra-Computing/Medusa)
+* Other Thunder-series systems in Xtra NUS: [ThunderGBM](https://github.com/Xtra-Computing/thundergbm) | [ThunderSVM](https://github.com/Xtra-Computing/thundersvm)
